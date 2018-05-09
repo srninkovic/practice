@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Mail\welcome;
+use Illuminate\Support\Facades\Mail;
 
 class RegistrationController extends Controller
 {
@@ -31,6 +33,11 @@ class RegistrationController extends Controller
 
       //sign in & redirect
       auth()->login($user);
+
+
+      // \Mail::to($user)->send(new welcome);
+
+
       return redirect()->home();
   }
 }
