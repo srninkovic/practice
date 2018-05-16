@@ -20,20 +20,6 @@ class PostController extends Controller
         $posts = Post::latest()
             ->filter(request(['month', 'year']))
             ->get();
-        // $posts = Post::latest();
-        //
-        // if ($month = request('month')) {
-        //     $posts->whereMonth('created_at',
-        //     Carbon::parse($month)->month);
-        // }
-        //
-        // if ($year = request('year')) {
-        //     $posts->whereYear('created_at', $year);
-        // }
-        //
-        // $posts = $posts->get();
-
-        // $archives = Post::archives();
 
       return view('posts.index', compact('posts'));
     }
@@ -51,17 +37,6 @@ class PostController extends Controller
 
     public function store()
     {
-      // $post = new \App\Post;
-
-      // $post->title = Request('title');
-      // $post->body = Request('body');
-      //
-      // $post->save();
-
-      // Post::create([
-      //   'title' => request('title'),
-      //   'body' => request('body')
-      // ]);
 
       $this->validate(request(), [
         'title' => 'required',
@@ -72,13 +47,6 @@ class PostController extends Controller
           new Post(request(['title', 'body']))
       );
 
-      // // Post::create(request(['title', 'body', 'user_id']));
-      // Post::create([
-      //     'title' => request('title'),
-      //     'body' => request('body'),
-      //     'user_id' => auth()->id()
-      // ]);
-
-      return redirect('/');
+      return redirect()->home();
     }
 }

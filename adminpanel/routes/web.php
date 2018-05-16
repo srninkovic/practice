@@ -1,6 +1,9 @@
 <?php
+//website
+Route::view('/', 'website');
 
-Route::get('/', 'PostController@index')->name('home');
+//admin
+Route::get('/admin', 'PostController@index')->name('home');
 
 Route::get('/create', 'PostController@create');
 Route::post('/posts', 'PostController@store');

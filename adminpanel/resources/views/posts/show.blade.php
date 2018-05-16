@@ -30,8 +30,6 @@
 
   <hr />
 
-  <div class="">
-
       <div class="card-block">
 
           <form method="POST" action="/posts/{{ $post->id }}/comments">
@@ -57,7 +55,5 @@
       </div>
 
   </div>
-
-</div>
 
 @endsection
