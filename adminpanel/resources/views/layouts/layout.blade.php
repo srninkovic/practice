@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Verhalen vertellen</title>
+    <title>Forum</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,7 +25,7 @@
 
         <div class="blog-header">
           <div class="container">
-            <h1 class="blog-title">Verhalen vertellen</h1>
+            <h1 class="blog-title">panel</h1>
             <p class="lead blog-description">Vertel hier je verhalen</p>
           </div>
         </div>

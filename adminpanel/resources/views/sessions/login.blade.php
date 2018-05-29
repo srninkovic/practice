@@ -1,8 +1,8 @@
-@extends('layouts.layout')
+<!-- @extends('layouts.layout') -->
 
-@section('content')
+ <!-- @section('content') -->
 
-    <div class="col-md-8">
+    <div class="col-md-6 offset-md-3">
 
         <h1>Login</h1>
 
@@ -29,4 +29,4 @@
     </form>
     </div>
 
-@endsection
+<!-- @endsection -->

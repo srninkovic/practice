@@ -2,6 +2,8 @@
 
 @section ('content')
 <div class="col-sm-8">
+  <a href="{{ route('posts.edit', $post->id) }}" class="label label-warning">Edit</a>
+  <a href="{{ route('posts.delete', $post->id) }}" class="label label-danger" onclick="return confirm('Are you sure to delete?')">Delete</a>
 
   <h1>{{ $post->title }}</h1>
 

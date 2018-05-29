@@ -4,7 +4,7 @@
 
   <div class="col-sm-8">
 
-    <h1>Publish a post</h1>
+    <h1>Nieuw topic</h1>
 
     <hr />
 

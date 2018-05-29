@@ -9,6 +9,6 @@
         {{ $post->created_at->toFormattedDateString() }}
     </p>
     <p class="content">
-        {{ $post-> body}}
+        <!-- {{ $post-> body}} -->
     </p>
 </div><!-- /.blog-post -->

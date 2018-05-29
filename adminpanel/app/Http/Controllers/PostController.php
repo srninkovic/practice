@@ -49,4 +49,35 @@ class PostController extends Controller
 
       return redirect()->home();
     }
+
+    public function edit($id){
+            //get post data by id
+            $post = Post::find($id);
+
+            //load form view
+            return view('posts.edit', ['post' => $post]);
+        }
+
+    public function update($id, Request $request){
+        //validate post data
+        $this->validate($request, [
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+
+        //get post data
+        $postData = $request->all();
+
+        //update post data
+        Post::find($id)->update($postData);
+
+        return redirect()->route('home');
+    }
+
+    public function delete($id){
+        //update post data
+        Post::find($id)->delete();
+
+        return redirect()->route('home');
+    }
 }
