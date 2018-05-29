@@ -22,5 +22,5 @@ php artisan serve
 ```
 * 2nd - run 
 ```
-npm dev watch
+npm run watch
 ```
