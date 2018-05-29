@@ -16,5 +16,11 @@ php artisan migrate
 ```
 
 ## Run program
-* 1st - run php artisan serve
-* 2nd - run npm dev watch
+* 1st - run 
+```
+php artisan serve
+```
+* 2nd - run 
+```
+npm dev watch
+```
